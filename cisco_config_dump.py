@@ -6,8 +6,8 @@ import os
 import time
 import datetime
 import re
-hosts = euf.get_hosts_from_file('hosts_test.txt')
-accounts = euf.get_accounts_from_file('accounts.cfg.lab')
+hosts = euf.get_hosts_from_file('hosts.cfg')
+accounts = euf.get_accounts_from_file('accounts.cfg')
 def dump_config(job, host, conn):
 		conn.execute('term len 0')       
 		conn.execute('show run')
